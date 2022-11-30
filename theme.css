@@ -1,0 +1,68 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
+  color: rgb(6, 255, 6);
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.header{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  background-color: #232323;
+  width: auto;
+  height: fit-content;
+}
+
+.Haxxter{
+  padding: 1vh;
+  margin-left: 5vh;
+  margin-right: 50vh;
+}
+
+.boxes{
+  padding: 1vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+
+.boxes:hover{
+  display: inline-block;
+  position: relative;
+}
+
+.boxes::after{
+	content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+  background-color:  rgb(6, 255, 6);
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+
+.boxes:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.background-pic{
+  position: absolute;
+  transform: scale(1.1);
+  z-index: -1;
+  filter: blur(10px);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.text-box{
+  width: 50%;
+  height: auto;
+}
