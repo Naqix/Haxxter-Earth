@@ -79,5 +79,14 @@
 }
 
 .circle{
+  z-index: 1;
+  margin: 20vh;
+  width: auto;
+  height: auto;
   background-color: white;
+  border-radius: 100%;
+}
+
+.pod-audio{
+  
 }
