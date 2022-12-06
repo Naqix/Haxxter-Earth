@@ -18,6 +18,7 @@
 }
 
 .Haxxter{
+  text-align: center;
   padding: 1vh;
   margin-left: 5vh;
   margin-right: 50vh;
@@ -62,7 +63,18 @@
   min-width: 100%;
 }
 
-.text-box{
-  width: 50%;
-  height: auto;
+.text_box_title {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  left: 30%;
+  top: 32%;
 }
+
+.text-box{
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  top: 40%;
+}
+
