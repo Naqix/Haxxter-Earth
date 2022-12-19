@@ -41,7 +41,7 @@ body{
 }
 
 .boxes:hover{
-  opacity: 0.5;
+  filter: brightness(150%);
 }
 
 a:link { text-decoration: none; }

@@ -11,6 +11,7 @@
 .background-picture {
     position: absolute;
     right: 0;
+    transform: scaleX(1.6);
     top: 5%;
     z-index: -1;
     min-width: 100%;
