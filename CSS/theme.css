@@ -68,13 +68,14 @@ header{
 .text-box-title {
   color: whitesmoke;
   position: absolute;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 600;
   left: 36%;
-  top: 24%;
+  top: 23%;
 }
 
 .text-box{
+  font-size: 1.4rem;
   position: absolute;
   width: 40%;
   left: 36%;
@@ -83,9 +84,9 @@ header{
 
 .square-pic{
   border: rgb(6, 255, 6) solid 0.01mm ;
-  margin-right: 15vh;
+  margin-right: 2vw;
   margin-top: 15vh;
-  margin-left: 30vh;
+  margin-left: 13vw;
   z-index: -1;
   aspect-ratio: 1/1;
   background-color: gray;
@@ -103,8 +104,9 @@ header{
 .pod-audio{
   margin-right: 2vh;
   z-index: 3;
-  margin-left: 30vh;
-  margin-top:  3vh;
+  margin-left: 13vw;
+  margin-top: 3vh;
+  width: 20%;
 }
 
 a:link { text-decoration: none; }
