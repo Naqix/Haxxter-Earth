@@ -5,41 +5,56 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/theme.css">
+	<link rel="stylesheet" href="CSS/index.css">
 	<title>Haxxter Earth</title>
 </head>
 
 <body>
 	<header>
-		<div class="haxxter">
-			<h1>
-				<a href="index.html">
-				&lt; Haxxter Earth /&gt;
-				</a>
-			</h1>
-		</div>
-		<div class="boxes">
-			<h1>
-				<a href="podcast.html">
-					&lt; Avsnitt /&gt;
-				</a>
-			</h1>
-		</div>
-		<div class="boxes">
-			<h1>
-				<a href="about.html">
-					&lt; Om Oss /&gt;
-				</a>
-			</h1>
+		<h1 id="title">
+			&lt;Haxxter Earth/&gt;
+		</h1>
+		<div class="nav-container">
+			<div class="nav-boxes">
+				<h4><a href="index.html">&lt;Hem/&gt;</a></h4>
+			</div>
+			<div class="nav-boxes">
+				<h4><a href="podcast-epsidoe-menu.html">&lt;Avsnitt/&gt;</a></h4>
+			</div>
+			<div class="nav-boxes">
+				<h4><a href="about.html">&lt;Om Oss/&gt;</a></h4>
+			</div>
 		</div>
 	</header>
 
-	<div class="background-pic">
-		<img src="Images/pankaj-patel-_SgRNwAVNKw-unsplash.jpg" alt="bild1">
-	</div>
-
-
 	<section>
+		<div class="background">
+			<img src="Images/pankaj-patel-_SgRNwAVNKw-unsplash.jpg" alt="background-picture">
+		</div>
+	</section>
+
+	<section class="main-container">
+		<section class="text-box-container">
+			<div class="text-box-box">
+				<h1>
+					Välkommen till vår Poddcast!
+				</h1>
+				<h2>
+					En Podd för Ungdomar Intresserade i Teknik, Programmering och mycket mer, 
+					Just skapade av ungdomar intresserade i Teknik!
+				</h2>
+				<div class="listen-button">
+					<h2 style="margin-top: 15%; font-size: 3.5rem; width: fit-content; font-style: italic;">
+						Första Avsnittet Ute Nu!
+					</h2>
+					<input type="button" onclick="window.location.href='episode-pages/avsnitt-1.html'" value="Lyssna Nu">
+				</div>
+			</div>
+
+		</section>
+	</section>
+
+	<!-- <section>
 		<div class="text-container">
 			<p class="text-box-title"> Senaste episoden: Episod 01 - Darkweb </p>
 			<div class="text-box">
@@ -50,19 +65,19 @@
 				</p>
 			</div>
 		</div>
-	
-	
+
+
 		<div class="square-pic">
 			<img src="Images/kaur-kristjan-CpPF4W5PB1c-unsplash.jpg" alt="darkweb">
 		</div>
-	
+
 		<audio controls class="pod-audio">
 			<source src="Audio/Podcast_Ruben_Ward_Abhay_Joel.mp4" type="audio/mp4">
 			Your browser does not support the audio element.
 		</audio>
-	</section>
+	</section> -->
 
-	<script src="script.js"></script>
+	<script src="script.js"></script> 
 </body>
 
 </html>

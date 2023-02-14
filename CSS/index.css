@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+header{
+  background-color: #232323;
+  color: rgb(6, 255, 6);
+  border-bottom: rgb(6, 255, 6) solid 0.15rem;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;  
+}
+
+body{
+  background-color: #444242;
+}
+
+#title{
+  font-size: 2.5rem;
+  margin-left: 1%;
+  align-self: center;
+}
+
+.nav-container{
+  display: flex;
+  flex-flow: row nowrap;
+  margin-right: 0.1rem;
+}
+
+.nav-boxes{
+  font-size: 2rem;
+  align-self: center;
+  display: block;
+  padding: 1rem 2.2rem;
+}
+
+.nav-boxes h4 a{
+  color: rgb(6, 255, 6);
+}
+
+.nav-boxes:hover, .nav-boxes:hover h4 a{
+  color: green;
+  text-underline-offset: 0.9rem;
+  text-decoration: underline green solid 0.15rem;
+
+}
+
+.background{
+  position: fixed;
+  top: 0;
+  z-index: -999;
+  opacity: 0.7;
+  filter: blur(30px);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+/* .main-container{
+  height: 100vh;
+} */
+
+.text-box-container{
+  margin-top: 3%;
+  margin-left: 5%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: inherit;
+}
+
+.text-box-box{
+  color: whitesmoke;
+}
+
+.text-box-box h1{
+  font-family: 'Segoe UI';
+  font-weight: 300;
+  font-size: 5rem;
+}
+
+.text-box-box h2{
+  margin-top: 2%;
+  font-family: 'Segoe UI';
+  font-weight: 300;
+  font-size: 2rem;
+  width: 60%;
+}
+
+.listen-button{
+  position: absolute;
+  flex-direction: column;
+  text-align: start;
+  align-items: start;
+  align-content: start;
+
+}
+
+input{
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 5%;
+  background: none;
+  padding: 1.5rem;
+  border-radius: 3.6rem;
+  border: 0.2rem solid;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input:hover {
+  transform: scale(1.1);
+}
+
+/* .square-pic{
+  border: rgb(6, 255, 6) solid 0.01mm ;
+  margin-right: 2vw;
+  margin-top: 15vh;
+  margin-left: 13vw;
+  z-index: -1;
+  aspect-ratio: 1/1;
+  background-color: gray;
+  width: 20%; 
+  height: 20%;
+  border-radius: 5%;
+}
+
+.square-pic img {
+  transform: scale(2.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.pod-audio{
+  margin-right: 2vh;
+  z-index: 3;
+  margin-left: 13vw;
+  margin-top: 3vh;
+  width: 20%;
+} */
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; } 
