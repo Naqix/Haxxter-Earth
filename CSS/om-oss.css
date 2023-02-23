@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; } 
+
+header{
+    background-color: #232323;
+    color: rgb(6, 255, 6);
+    border-bottom: rgb(6, 255, 6) solid 0.15rem;
+    width: 100vw;
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;  
+}
+
+body{
+    background-color: #444242;
+}
+
+/* html, body{
+    height: 100%;
+  }
+  
+body{
+    background-color: #232323;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://unsplash.com/photos/bCrM2e1M0a4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
+  
+
+.title{
+    font-size: 2.5rem;
+    margin-left: 1%;
+    align-self: center;
+}
+
+.nav-container{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: 0.1rem;
+}
+
+.nav-boxes{
+    font-size: 2rem;
+    align-self: center;
+    display: block;
+    padding: 1rem 2.2rem;
+}
+
+.nav-boxes h4 a{
+    color: rgb(6, 255, 6);
+}
+
+.nav-boxes:hover, .nav-boxes:hover h4 a{
+    color: green;
+}
+
+#selected{
+    text-underline-offset: 0.7rem;
+    text-decoration: underline rgb(6, 255, 6) solid 0.15rem;
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -999;
+    opacity: 0.7;
+    filter: blur(15px);
+}
+
+.abhay-info-title {
+    color: whitesmoke;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.joel-info-title {
+    color: whitesmoke;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.abhay-info {
+  position: absolute;
+  width: 40%;
+  left: 3%;
+  top: 23%;
+  text-align:left;
+}
+
+.joel-info {
+    position: absolute;
+    width: 40%;
+    left: 57%;
+    top: 23%;
+    text-align: right;
+}
+
+.ruben-info-title {
+    color: whitesmoke;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.ruben-info {
+    position: absolute;
+    width: 40%;
+    left: 57%;
+    top: 58%;
+    text-align: right;
+}
+
+.ward-info-title {
+    color: whitesmoke;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.ward-info {
+  position: absolute;
+  width: 40%;
+  left: 3%;
+  top: 58%;
+  text-align:left;
+}
