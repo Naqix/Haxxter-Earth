@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+header{
+  background-color: #232323;
+  color: rgb(6, 255, 6);
+  border-bottom: rgb(6, 255, 6) solid 0.15rem;
+  width: 100vw;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;  
+}
+
+body{
+  background-color: #444242;
+}
+
+.title{
+  font-size: 2.5rem;
+  margin-left: 1%;
+  align-self: center;
+}
+
+.nav-container{
+  display: flex;
+  flex-flow: row nowrap;
+  margin-right: 0.1rem;
+}
+
+.nav-boxes{
+  font-size: 2rem;
+  align-self: center;
+  display: block;
+  padding: 1rem 2.2rem;
+}
+
+.nav-boxes h4 a{
+  color: rgb(6, 255, 6);
+}
+
+.nav-boxes:hover, .nav-boxes:hover h4 a{
+  color: green;
+}
+
+#selected{
+  text-underline-offset: 0.7rem;
+  text-decoration: underline rgb(6, 255, 6) solid 0.15rem;
+}
+
+.background{
+  position: fixed;
+  top: 0;
+  z-index: -999;
+  opacity: 0.7;
+  filter: blur(30px);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; } 
+
+
+.podcast_title {
+  transform: translate(-50%);
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  color: whitesmoke;
+  font-size: 8rem;
+}
+
+.player {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
+  left: 50%;
+  top: 85vh;
+  width: 400px;
+  height: 50px;
+  color: #fff;
+  padding: 10px;
+}
+
+audio {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.time_bar {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 75vh;
+  width: 70%;
+  height: 12.5px;
+  background-color: #232323;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+}
+
+.time_bar .progress {
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+#show_time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  color: whitesmoke;
+  float: right;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.time_display {
+  color: whitesmoke;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+/* button img {
+  transform: translateY(25%);
+  width: 30px;
+  height: auto;
+} */
+
+button{
+  font-size: 3rem;
+}
