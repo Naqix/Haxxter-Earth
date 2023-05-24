@@ -1,61 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/index.css">
-	<title>Haxxter Earth</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Haxxter Earth</title>
 </head>
-
 <body>
-	<header>
-		<h1 class="title">
-			<a href="index.html" style="color: rgb(6, 255, 6);">
-				&lt;Haxxter Earth/&gt;
-			</a>
-		</h1>
-		<div class="nav-container">
-			<div class="nav-boxes" id="selected">
-				<h4><a href="index.html">&lt;Hem/&gt;</a></h4>
-			</div>
-			<div class="nav-boxes">
-				<h4><a href="avsnitt-meny.html">&lt;Avsnitt/&gt;</a></h4>
-			</div>
-			<div class="nav-boxes">
-				<h4><a href="om-oss.html">&lt;Om Oss/&gt;</a></h4>
-			</div>
-		</div>
-	</header>
-
-	<section>
-		<div class="background">
-			<img src="Images/pankaj-patel-_SgRNwAVNKw-unsplash.jpg" alt="background-picture">
-		</div>
-	</section>
-
-	<section class="main-container">
-		<section class="text-box-container">
-			<div class="text-box-box">
-				<h1>
-					Välkommen till vår Poddcast!
-				</h1>
-				<h2>
-					En Podd för Ungdomar Intresserade i Teknik, Programmering och mycket mer, 
-					Just skapade av ungdomar intresserade i Teknik!
-				</h2>
-				<div class="listen-button">
-					<h2 id="First-Episode">
-						Första Avsnittet Ute Nu!
-					</h2>
-					<input type="button" onclick="window.location.href='episode-pages/avsnitt-1.html'" value="Lyssna Nu">
-				</div>
-			</div>
-			<img src="Images/pexels-photo-276452.jpeg" alt="PoddcastLogo">
-		</section>
-	</section>
-
+    <div class="header">
+        <p>Haxxter Earth</p>
+        <p><a href="avsnitt-1.html">Avsnitt 1</a></p>
+        <p><a href="om_oss.html">Om oss</a></p>
+    </div>
+    <div class="container">
+           <div class="welcome_text">
+            <p>Välkommen till våran podd!</p>
+            <p class="info_text">En Podd för Ungdomar Intresserade i Teknik, Programmering och mycket mer. <br> skapad av ungdomar intresserade i Teknik!</p>
+            <p class="newest_ep">Första Avsnittet Ute Nu!</p>
+            <input type="button" onclick="window.location.href='avsnitt-1.html'" value="Lyssna Nu">
+         </div> 
+        <img class="background_image" src="background.jpg" alt="background-picture">
+    </div>
 </body>
-
 </html>

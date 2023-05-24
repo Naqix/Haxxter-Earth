@@ -1,9 +1,9 @@
 // Selects audio element and play/pause button
 const audio = document.querySelector('.audio');
-const play_pause_btn = document.querySelector('.play_pause_btn');
+const play_pause_btn = document.querySelector('.play_button');
 
 // Creates progress bar for time bar element
-const time_bar = document.querySelector('.time_bar');
+const time_bar = document.querySelector('.bar');
 const progress = document.createElement('div');
 progress.classList.add('progress');
 time_bar.appendChild(progress);
@@ -24,8 +24,8 @@ audio.addEventListener('timeupdate', function () {
 });
 
 // Selects the forward and backward buttons
-const forward_btn = document.querySelector('.forward_btn');
-const backward_btn = document.querySelector('.backward_btn');
+const forward_btn = document.querySelector('.skip_10_button');
+const backward_btn = document.querySelector('.revert_10_button');
 
 // Adds event listener to the play/pause button to play/pause the audio
 play_pause_btn.addEventListener('click', function () {
@@ -107,7 +107,7 @@ time_bar.addEventListener('mousemove', function (e) {
 
     // Update the time display with the calculated minutes and seconds
     time_display.innerHTML = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
-
+    
     // If the mouse is being dragged, update the audio current time
     if (is_dragging) {
         // Calculate the percentage of the time bar and set the audio current time

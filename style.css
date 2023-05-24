@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    font-size: 24px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    z-index: 1;
+}
+
+.background_image {
+    position: fixed; /* without fixed or absolute, the container size gets totally messed with for whatever reason*/
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(30px);
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header a:hover {
+    color: #00db1d;
+    text-decoration: underline;
+}
+
+.header p {
+    position: relative;
+    text-align: left;
+    top: calc(50% - 10px);
+}
+
+.header p:first-of-type {
+    margin-left: 60px;
+    float: left;
+}
+
+.header p:not(:first-of-type) {
+    margin-right: 60px;
+    float: right;
+}
+
+.welcome_text {
+    position: relative;
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    top: 3vh;
+}
+
+.info_text {
+    position: relative;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    color: #d6d6d6;
+    padding-top: 10px;
+}
+
+.newest_ep {
+    position: relative;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    color: #d6d6d6;
+    padding-top: 150px;
+}
+
+input {
+    color: white;
+    font-size: 32px;
+    margin-top: 3%;
+    background: none;
+    padding: 1rem;
+    border-radius: 3.6rem;
+    border: 0.2rem solid;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input:hover {
+    transform: scale(1.1);
+}
+
+/* audio player container */
+.audio_player {
+    /* background-color: aqua; */
+    width: fit-content;
+    height: fit-content;
+}
+
+.bar {
+    position: relative;
+    width: 218px;
+    height: 8px;
+    background-color: #fff;
+    top: calc(51%);
+}
+
+.bar .progress {
+    position: relative;
+    top: 0;
+    height: 100%;
+    background-color: #00db1d;
+}
+
+.time {
+    position: absolute;
+    font-size: 16px;
+    color: #fff;
+    bottom: 100%;
+    right: 0;
+}
+
+.time_display {
+    position: absolute;
+    font-size: 16px;
+    color: #fff;
+    bottom: 100%;
+}
+
+.description_title {
+    position: relative;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    color: #d6d6d6;
+    padding-top: 10px;
+}
+
+.description {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 2%;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.skip_10_button {
+    display: inline;
+    cursor: pointer;
+    color: #fff;
+    /* background-color: #00db1d; */
+    width: fit-content;
+    margin-left: 171px;
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+
+.play_button {
+    position: fixed;
+    top: 53.5%;
+    background: none;
+    border: none;
+    color: #fff;
+    left: 50%;
+}
+
+.revert_10_button {
+    display: inline;
+    cursor: pointer;
+    color: #fff;
+    /* background-color: #00db1d; */
+    width: fit-content;
+    background: none;
+    border: none;
+    font-size: 24px;
+}
+
+.episode_text {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* could have easily avoided all of these stupid media queries if I could have gotten my damn display flex container to work properly */
+/* for some reason I could not, even though I took it from my other project where it worked flawlessly :( */
+
+@media screen and (max-width: 790px) {
+    .description {
+        padding-bottom: 50px;
+    }
+
+    .description_title {
+        padding-top: 50px;
+    }
+
+    body {
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width: 560px) {
+    .info_text {
+        font-size: 22px;
+    }
+
+    .welcome_text {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .header p {
+        font-size: 20px;
+    }
+
+    .header p:first-of-type {
+        margin-left: 20px;
+    }
+    
+    .header p:not(:first-of-type) {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+   
+    .header p:first-of-type {
+        margin-left: 20px;
+    }
+    
+    .header p:not(:first-of-type) {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .header p {
+        font-size: 18px;
+    }
+    .play_button {
+        top: 54.5%;
+    }
+
+    .header p:first-of-type {
+        margin-left: 20px;
+    }
+    
+    .header p:not(:first-of-type) {
+        margin-right: 20px;
+    }
+
+    .welcome_text {
+        font-size: 25px;
+    }
+
+    .newest_ep {
+        font-size: 20px;
+    }
+
+    .info_text {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .header p {
+        font-size: 16px;
+    }
+}
