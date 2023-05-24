@@ -222,6 +222,10 @@ input:hover {
     .info_text {
         font-size: 22px;
     }
+    
+    .background_image {
+        transform: scale(1.5);
+    }
 
     .welcome_text {
         font-size: 40px;
